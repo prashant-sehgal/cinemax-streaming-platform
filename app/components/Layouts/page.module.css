@@ -1,0 +1,21 @@
+.homeLayout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 20px 0px 0px 20px;
+  background: #000;
+  color: white;
+}
+
+.homeLayout .container {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.homeLayout .container .page {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-left: 20px;
+}

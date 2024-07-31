@@ -1,0 +1,24 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  justify-content: center;
+}
+
+.sidebar .navlink {
+  opacity: 0.6;
+  transition: opacity 150ms ease-in-out;
+}
+
+.sidebar .navlink:hover {
+  opacity: 1;
+}
+
+.sidebar .navlink img {
+  width: 40px;
+  filter: brightness(0) invert(1);
+}
+
+.sidebar .navlink.active {
+  opacity: 1;
+}
