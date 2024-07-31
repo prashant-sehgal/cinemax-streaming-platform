@@ -33,7 +33,7 @@ export default function Carousel({ children }: Props) {
           setCurrentActiveSlide((prevSlide) =>
             prevSlide === children.length - 1 ? 0 : prevSlide + 1
           );
-        }, 2000);
+        }, 10000);
       }
 
       // Cleanup the timeout on component unmount or slide change
