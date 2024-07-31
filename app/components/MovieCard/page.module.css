@@ -1,2 +1,26 @@
 .movieCard {
+  width: 200px;
+  opacity: 0.9;
+  transition: all 150ms ease-in-out;
+}
+
+.movieCard img {
+  box-shadow: 0px 0px 2px 0px white;
+  width: 100%;
+}
+
+.movieCard .title {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.movieCard .sub {
+  font-size: 12px;
+  color: red;
+  margin-top: 5px;
+}
+
+.movieCard:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }

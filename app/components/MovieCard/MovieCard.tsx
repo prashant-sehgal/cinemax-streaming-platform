@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function MovieCard({
   image,
@@ -13,10 +14,12 @@ export default function MovieCard({
   to: string;
 }>) {
   return (
-    <div className={styles.movieCard}>
-      <img src={image} alt="movie-img" />
-      <p>{title}</p>
-      <p>{year}</p>
-    </div>
+    <Link href={to} id="link">
+      <div className={styles.movieCard}>
+        <img src={image} alt="movie-img" />
+        <p className={styles.title}>{title}</p>
+        <p className={styles.sub}>{year}</p>
+      </div>
+    </Link>
   );
 }
