@@ -1,6 +1,6 @@
 "use client";
 
-import React, { act, useEffect, useReducer, useRef } from "react";
+import React, { useEffect, useReducer, useRef } from "react";
 import Logo from "../components/Logo";
 import Button from "./Button";
 import { Action, State } from "./Types";

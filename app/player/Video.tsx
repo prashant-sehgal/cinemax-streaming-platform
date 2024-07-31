@@ -1,4 +1,4 @@
-import React, { LegacyRef, SyntheticEvent, useEffect, useState } from "react";
+import React, { LegacyRef, useEffect } from "react";
 import styles from "./page.module.css";
 
 interface Props {
