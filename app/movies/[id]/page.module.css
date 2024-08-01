@@ -1,0 +1,123 @@
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.page .trailer .overlay {
+  position: absolute;
+}
+
+.page .poster {
+  flex: 0.5;
+  max-width: 500px;
+  position: relative;
+}
+
+.poster img {
+  width: 100%;
+}
+
+.poster .container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.page .details {
+  flex: 0.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.page .details .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page .details .header .container .title {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.page .details .header .container .sub {
+  padding-top: 10px;
+}
+
+.page .details .header .container .sub span {
+  color: #6b6b6b;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.page .details .header .ratings {
+  display: flex;
+  height: 25px;
+}
+
+.page .details .header .ratings p {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  font-weight: 500;
+}
+
+.page .details .header .ratings img {
+  width: 50px;
+}
+
+.page .overview .title {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 2px solid red;
+  width: fit-content;
+}
+
+.page .overview .description {
+  font-size: 15px;
+  color: white;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+.feature .main {
+  font-size: 16px;
+  color: #6b6b6b;
+  font-weight: 600;
+  width: 100px;
+}
+
+.feature .content {
+  display: flex;
+  font-size: 14px;
+  gap: 20px;
+}
+
+.watchNowButton {
+  width: 100%;
+  height: 60px;
+  border: none;
+  background: #fff;
+  font-size: 20px;
+  transition: width ease-in-out 150ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.watchNowButton:hover {
+  background: red;
+  color: white;
+  transform: scale(1.1);
+}

@@ -19,4 +19,6 @@
   overflow-y: auto;
   margin-left: 20px;
   padding: 10px;
+  max-width: 2000px;
+  min-width: 1000px;
 }
