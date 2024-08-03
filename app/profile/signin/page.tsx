@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { FormEvent, useState } from "react";
 import styles from "../page.module.css";
 import Link from "next/link";
 import InputPassword from "../InputPassword";
@@ -8,10 +8,15 @@ import InputPassword from "../InputPassword";
 export default function page() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
+
+  function onFormSubmit(event: FormEvent) {
+    event.preventDefault();
+  }
 
   return (
     <div>
-      <form className={styles.form}>
+      <form className={styles.form} onSubmit={onFormSubmit}>
         <h1>Sign In</h1>
         <div className={styles.element}>
           <input
@@ -31,6 +36,8 @@ export default function page() {
         <Link href="/">
           <p className={styles.link}>Forgot Password?</p>
         </Link>
+
+        <p className={styles.error}>{error}</p>
 
         <button type="submit" className={styles.buttonPrimary}>
           Sign In

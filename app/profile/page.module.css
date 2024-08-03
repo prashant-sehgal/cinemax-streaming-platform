@@ -7,6 +7,10 @@
   padding: 10px;
 }
 
+.form .error {
+  color: red;
+}
+
 .form a {
   color: white;
   text-decoration: underline;
