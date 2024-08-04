@@ -3,11 +3,9 @@
 import React, { FormEvent, useState } from "react";
 import styles from "../page.module.css";
 import Link from "next/link";
-import InputPassword from "../InputPassword";
 
 export default function page() {
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   function onFormSubmit(event: FormEvent) {
@@ -17,7 +15,8 @@ export default function page() {
   return (
     <div>
       <form className={styles.form} onSubmit={onFormSubmit}>
-        <h1>Sign In</h1>
+        <h1>Enter your email</h1>
+        <p>Password reset link will be sent to your registered email.</p>
         <div className={styles.element}>
           <input
             type="email"
@@ -27,27 +26,10 @@ export default function page() {
             required
           />
         </div>
-        <InputPassword
-          value={password}
-          setValue={setPassword}
-          placeholder="Enter your password"
-        />
-
-        <Link href="/profile/forgot-password">
-          <p className={styles.link}>Forgot Password?</p>
-        </Link>
-
-        <p className={styles.error}>{error}</p>
 
         <button type="submit" className={styles.buttonPrimary}>
-          Sign In
+          Send Link
         </button>
-
-        <p className={styles.textCenter}>Or</p>
-
-        <Link href="/profile/signup">
-          <button className={styles.buttonSecondary}>Create an account</button>
-        </Link>
       </form>
     </div>
   );
