@@ -27,6 +27,8 @@ export default function page() {
           />
         </div>
 
+        <p className={styles.error}>{error}</p>
+
         <button type="submit" className={styles.buttonPrimary}>
           Send Link
         </button>

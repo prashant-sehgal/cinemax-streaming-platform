@@ -30,8 +30,10 @@ export default function page() {
           placeholder="Confirm new password"
         />
 
+        <p className={styles.error}>{error}</p>
+
         <button type="submit" className={styles.buttonPrimary}>
-          Send Link
+          Reset Password
         </button>
       </form>
     </div>
